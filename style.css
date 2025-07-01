@@ -116,19 +116,16 @@ label{
     user-select: none;
 }
 
-.caixa-tu{
-    width: 45%;
-    display: flex;
-    justify-content: end;
-    margin: 0 80px 40px 0;
+
+.image-t {
+  position: absolute;
+ bottom: 510px;
+  left: 890px;
+  height: 60px;
+  opacity: 35%;
+  pointer-events: none; /* evita que a imagem atrapalhe cliques */
 }
 
-.image-t{
-    opacity: 35%;
-    height: 60px;
-    
-    
-}
 .caixa-i{
     width: 444px;
 }
