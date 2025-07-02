@@ -48,7 +48,7 @@ body {
 }
 
 
-.left  div h1 {
+.caixa-texto h1 {
     font-size: 42px;
     font-weight: 700;
     user-select: none;
@@ -64,7 +64,6 @@ input[ type=email],
 input[ type=password],
 input[type=submit]
 {
-
     width: 444px;
     height: 49px;
     border-radius: 4px;
@@ -153,13 +152,13 @@ user-select: none;
     height: 352;
 }
 
- .caixa-left {
+ .caixa-rigth {
             display: flex;
             flex-direction:column;
             width: 525px;
  }
 
-.caixa-left h2{
+.caixa-rigth h2{
     
     font-size: 48px;
    
@@ -170,7 +169,7 @@ user-select: none;
     word-spacing: 8px;
 }
 
- .caixa-left p{
+ .caixa-rigth p{
     width: 438px;
     height: 110px;
     font-size: 18px;
@@ -179,12 +178,10 @@ user-select: none;
     padding: 20px 0; 
    
     line-height: 28px;
-   
-
  }
 
 @media(max-width: 1400px){
-.left div h1 {
+.caixa-texto h1 {
     font-size: 30px;
 }
 
@@ -250,7 +247,7 @@ input[type=submit]{
 
 
 @media(max-width:769px){
-.left div h1 {
+.caixa-texto h1 {
     font-size: 25px;
 }
 
@@ -290,15 +287,15 @@ input[type=submit]{
 }
 
 
-.rigth div {
+.caixa-rigth{
     width: 54%;
 }
 
-.rigth div h2{ 
+.caixa-rigth h2{ 
     font-size: 18px;
 }
 
- .rigth div p{
+ .caixa-rigth p{
     width: 100%;
     font-size: 12px;
     padding: 8px 0 0;
@@ -332,7 +329,7 @@ input[ type=password]::placeholder{
     
 }
 
-.left div h1 {
+.caixa-texto h1 {
     font-size: 32px;
 }
 
