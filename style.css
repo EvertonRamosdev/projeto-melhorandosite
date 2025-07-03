@@ -14,7 +14,7 @@ body {
 }
 
 .secao-principal {
-    width: 100%;
+    
     height: 100vh;
 
 }
@@ -26,6 +26,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100%;
+    width: 100%;
 
 }
 
@@ -57,24 +58,31 @@ body {
 .left form {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    align-items: center;
 }
+
 
 input[ type=text],
 input[ type=email],
 input[ type=password],
 input[type=submit]
-{
-    width: 444px;
+{   width: 100%;
+    max-width: 444px;
     height: 49px;
     border-radius: 4px;
-    margin: 12px 0;
+    margin: 8px 0;
     cursor: pointer;
 }
-input[ type=checkbox] {
-    height: 21px;
-    width: 20px;
-    border: 1px var(--colorblack);
-    cursor: pointer;
+.caixa-input{
+    width: 100%;
+    max-width: 444px;
+}
+
+input[type=checkbox] {
+  height: 21px;
+  width: 20px;
+  cursor: pointer;
 }
 
 input[ type=text]::placeholder,
@@ -106,7 +114,6 @@ label{
     font-weight: 400;
     user-select: none;
 }
-
 
 .image-t {
   position: absolute;
@@ -148,20 +155,23 @@ user-select: none;
 }
 
 .image1{
-    width: 525;
-    height: 352;
+    width: 100%;
+    max-width:525px;
+    height: auto;
 }
 
  .caixa-rigth {
             display: flex;
             flex-direction:column;
-            width: 525px;
+            width: 100%;
+            max-width: 525px;
  }
 
-.caixa-rigth h2{
+.caixa-rigth h2 {
     
     font-size: 48px;
-   
+    width: 100%;
+    max-width: 500px;
     font-weight: 700;
     color: var(--colorwhite);
     padding: 30px 0 0;
@@ -182,7 +192,7 @@ user-select: none;
 
 @media(max-width: 1400px){
 .caixa-texto h1 {
-    font-size: 30px;
+    font-size: 32px;
 }
 
 input[ type=text],
@@ -190,20 +200,21 @@ input[ type=email],
 input[ type=password],
 input[type=submit]
 {
-width: 320px;
+max-width: 320px;
 height: 40px;
 }
 .caixa-texto{
-   width: 320px;
+   max-width: 320px;
 }
 
 .caixa-i{
-    width: 320px;
+    width: 100%;
+    max-width: 320px;
 }
 
  .rigth img{
-    height: 30%;
-    width: 55%;
+    width: 80%;
+    max-width: 550px;
 }
 
 .image-t {
@@ -212,15 +223,17 @@ height: 40px;
 
 
 .rigth div {
-    width: 54%;
+    max-width: 400px;
 }
 
 .rigth div h2{ 
+    text-align: center;
     font-size: 30px;
 }
 
  .rigth div p{
-    width: 100%;
+    text-align: center;
+    max-width: 100%;
     font-size: 15px;
  }
 input[ type=text]::placeholder,
@@ -230,10 +243,7 @@ input[ type=password]::placeholder{
     padding-left: 3px;
 }
 
-input[type=checkbox]
-{
-    height: 15px;
-}
+
 label{
     font-size: 12px;
     
@@ -243,11 +253,18 @@ input[type=submit]{
     margin: 15px 0 ;
   }
 
+.caixa-input{
+    max-width: 320px;
 }
 
 
+}
+
+
+
+
 @media(max-width:769px){
-.caixa-texto h1 {
+.left div h1 {
     font-size: 25px;
 }
 
@@ -278,8 +295,8 @@ input[type=submit]{
   }
 
  .rigth img{
-    height: 18%;
-    width: 55%;
+    max-height: 200px;
+    max-width:250px ;
 }
 
 .image-t {
@@ -287,22 +304,20 @@ input[type=submit]{
 }
 
 
-.caixa-rigth{
+.rigth div {
     width: 54%;
 }
 
-.caixa-rigth h2{ 
+.rigth div h2{ 
     font-size: 18px;
 }
 
- .caixa-rigth p{
+ .rigth div p{
     width: 100%;
     font-size: 12px;
     padding: 8px 0 0;
     line-height: 20px;
     text-align: justify;
-
-
  }
 
  label{
@@ -315,6 +330,12 @@ input[ type=password]::placeholder{
     font-size: 10px;
     padding-left: 3px;
 }
+
+.caixa-input{
+    max-width: 220px;
+}
+
+
 }
 
 @media(max-width:425px) {
@@ -329,7 +350,7 @@ input[ type=password]::placeholder{
     
 }
 
-.caixa-texto h1 {
+.left div h1 {
     font-size: 32px;
 }
 
@@ -345,7 +366,7 @@ input[ type=password]::placeholder{
 
 
 .caixa-texto{
-   width: 360px;
+   max-width: 360px;
 }
 
 .caixa-i{
@@ -363,8 +384,10 @@ input[type=submit]{
   }
 
  .image{
-    height: 232px;
-    width: 347px;
+    max-height: 232px;
+    height: 200px;
+    width: 200px;
+    max-width: 347px;
     margin-top: 40px;
     padding: 0;
 }
