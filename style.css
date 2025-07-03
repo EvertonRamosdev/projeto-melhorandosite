@@ -163,7 +163,7 @@ user-select: none;
  .caixa-rigth {
             display: flex;
             flex-direction:column;
-            width: 100%;
+            width: 90%;
             max-width: 525px;
  }
 
@@ -176,16 +176,18 @@ user-select: none;
     color: var(--colorwhite);
     padding: 30px 0 0;
     
-    word-spacing: 8px;
+   
 }
 
  .caixa-rigth p{
-    width: 438px;
-    height: 110px;
+    max-width: 438px;
+    width: 90%;;
+
     font-size: 18px;
     font-weight: 400;
     color:var(--colorwhite);
     padding: 20px 0; 
+    text-align: justify;
    
     line-height: 28px;
  }
@@ -208,12 +210,12 @@ height: 40px;
 }
 
 .caixa-i{
-    width: 100%;
+    width: 90%;
     max-width: 320px;
 }
 
  .rigth img{
-    width: 80%;
+    width: 90%;
     max-width: 550px;
 }
 
@@ -221,20 +223,23 @@ height: 40px;
   display: none;
 }
 
-
-.rigth div {
-    max-width: 400px;
+.caixa-rigth{
+    display: flex;
+    display: flex;
+    max-width: 420px;
+    align-items: start;
 }
 
-.rigth div h2{ 
-    text-align: center;
-    font-size: 30px;
+
+.caixa-rigth h2{
+    font-size: 38px;
 }
 
  .rigth div p{
-    text-align: center;
-    max-width: 100%;
+    
+    max-width: 400px;
     font-size: 15px;
+    text-align: justify;
  }
 input[ type=text]::placeholder,
 input[ type=email]::placeholder,
@@ -278,11 +283,11 @@ height: 32px;
 }
 
 .caixa-texto{
-   width: 220px;
+   max-width: 220px;
 }
 
 .caixa-i{
-    width: 220px;
+    max-width: 220px;
 }
 
 .caixa-i p{
@@ -295,8 +300,7 @@ input[type=submit]{
   }
 
  .rigth img{
-    max-height: 200px;
-    max-width:250px ;
+    width: 70%;
 }
 
 .image-t {
@@ -351,7 +355,7 @@ input[ type=password]::placeholder{
 }
 
 .left div h1 {
-    font-size: 32px;
+    font-size: 25px;
 }
 
   input[type="text"],
@@ -360,17 +364,18 @@ input[ type=password]::placeholder{
   input[type="submit"] {
     width: 90%;
     max-width: 360px;
-    height: 40px;
+    max-height: 30%;
     margin: 7px auto;
   }
 
 
 .caixa-texto{
+    width: 90%;
    max-width: 360px;
 }
 
 .caixa-i{
-    width: 360px;
+    max-width: 360px;
 }
 
 .caixa-i p{
@@ -383,12 +388,9 @@ input[type=submit]{
    
   }
 
- .image{
+ .image1{
     max-height: 232px;
-    height: 200px;
-    width: 200px;
     max-width: 347px;
-    margin-top: 40px;
     padding: 0;
 }
 
@@ -402,29 +404,20 @@ input[type=submit]{
 }
 
 .rigth div h2{ 
-    font-size: 32px;
-    padding: 0;
+    font-size: 30px;
+    padding: 0 0 0;
+    font-weight: 700;
+    text-align: none;
 }
 
  .rigth div p{
     width: 100%;
     font-size: 14px;
-    padding: 8px 0 0;
-    line-height: 20px;
-    text-align: justify;
-
-
+    
  }
 
- label{
-    font-size: 10px;
-    
-}
-
-input[ type=text]::placeholder,
-input[ type=email]::placeholder,
-input[ type=password]::placeholder{
-    font-size: 10px;
-    padding-left: 3px;
-}
+ .caixa-input{
+    width: 90%;
+    max-width: 360px;
+ }
 }
