@@ -3,10 +3,10 @@
     padding: 0;
     box-sizing: border-box;
     outline: 0;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
 body {
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
 
     --colorazul: #0056FB;
     --colorwhite: #fff;
@@ -19,7 +19,8 @@ body {
 
 }
 .caixa-texto{
-    width: 444px;
+   max-width: 444px;
+   width: 100%;
 }
 .box-principal {
     display: flex;
@@ -104,6 +105,11 @@ input[type=submit]{
     border: none;
 }
 
+form{
+    position: relative;
+    z-index:9;
+}
+
  form div{
     display: flex;
     align-items: center;
@@ -168,7 +174,6 @@ user-select: none;
  }
 
 .caixa-rigth h2 {
-    
     font-size: 48px;
     width: 100%;
     max-width: 500px;
@@ -178,7 +183,6 @@ user-select: none;
     
    
 }
-
  .caixa-rigth p{
     max-width: 438px;
     width: 90%;;
@@ -191,10 +195,34 @@ user-select: none;
    
     line-height: 28px;
  }
+input[ type="submit"]{
+    z-index: 2;
+    transition: all 0.5s ease;
+}
+
+input[ type="submit"]:hover{
+    transform: scale(1.05) ;
+   
+}
+
+form::before{
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-image: url(/assets/code.svg);
+    z-index: 1;
+    opacity: 0.5;
+    bottom: -38px;
+    right: 455px;
+    width: 90px;
+    height: 90px;
+}
+
 
 @media(max-width: 1400px){
 .caixa-texto h1 {
     font-size: 32px;
+    opacity: 50%;
 }
 
 input[ type=text],
